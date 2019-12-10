@@ -7,8 +7,11 @@
 </head>
 <body>
 	<?php
-		print 'ようこそ'
+		#phpでは$を使って変数宣言
+		$nickname = $_POST['nickname'];
+		print 'ようこそ';
+		print $nickname;
+		print '様'
 	?>
-	
 </body>
 </html>
