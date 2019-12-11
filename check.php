@@ -7,7 +7,7 @@
 </head>
 <body>
 	<?php
-		#phpでは$を使って変数宣言
+		# phpでは$を使って変数宣言
 		$nickname = $_POST['nickname'];
 		print 'ようこそ';
 		print $nickname;

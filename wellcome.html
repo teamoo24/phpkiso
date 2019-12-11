@@ -6,13 +6,13 @@
 	<title></title>
 </head>
 <body>
-	{#
+	<!--
 		-form
 			-method : 後に扱う
-			-action : submitボタンがクリックされた時の飛び先#}
+			-action : submitボタンがクリックされた時の飛び先-->
 	<form method="post" action="check.php">
 		<p>ニックネームを入力してください。</p>
-		{#
+		<!--
 			-input : inputタグはいろんな入力枠を画面に出せる。
 				-name : この入力項目に名前を付けます。半各小文字で自由に付けれます(この場合は"nickname"が名前です。)
 				-type : 枠の種類です。
@@ -21,7 +21,7 @@
 					--"radio" : ラジオボタン
 					--"password" : パスワード
 					--"submit" : 送信ボタン
-		 #}
+		 -->
 		<input type="text" name="nickname" style="width:100px"><br>
 		<input type="submit" name="送信">
 	</form>
