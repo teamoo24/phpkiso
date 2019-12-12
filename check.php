@@ -37,10 +37,25 @@
 			print $goiken;
 			print '』<br>';
 		}
-		# Backボタン追加(php使用) 
-		print '<form>';
-		print '<input type="button" onclick="history.back()" value="戻る">';
-		print '</form>';
+		if($nickname == '' || $email == '' || $goiken == '') 
+		{
+			print'<form>';
+			print'<input type="button" onclick="history.back()" value="戻る">';
+			print'</form>';
+		}
+		else 
+		{
+			print '<form method="post" action="thanks.php">';
+			# hiddenを使って値を渡せる
+			print '<input name="nickname" type="hidden" value="'.$nickname.'">';
+			print '<input name="email" type="hidden" value="'.$email.'">';
+			print '<input name="goiken" type="hidden" value="'.$goiken.'">';
+			# Backボタン追加(php使用) 
+			print '<input type="button" onclick="history.back()" value="戻る">';
+			# サンクスページに飛ぶボタン追加
+			print '<input type="submit" value="OK">';
+			print '</form>';
+		}
 	?>
 	<!-- Backボタン追加(HTML形式) -->
 	<!-- <button onclick="history.go(-1);">Back </button> -->
