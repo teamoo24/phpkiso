@@ -37,6 +37,9 @@
 			print $goiken;
 			print '』<br>';
 		}
+
 	?>
+	<!-- Backボタン追加 -->
+	<button onclick="history.go(-1);">Back </button>
 </body>
 </html>
