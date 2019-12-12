@@ -37,9 +37,12 @@
 			print $goiken;
 			print '』<br>';
 		}
-
+		# Backボタン追加(php使用) 
+		print '<form>';
+		print '<input type="button" onclick="history.back()" value="戻る">';
+		print '</form>';
 	?>
-	<!-- Backボタン追加 -->
-	<button onclick="history.go(-1);">Back </button>
+	<!-- Backボタン追加(HTML形式) -->
+	<!-- <button onclick="history.go(-1);">Back </button> -->
 </body>
 </html>
