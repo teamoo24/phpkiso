@@ -17,7 +17,7 @@
 		print '様<br>';
 		print 'ご意見ありがとうございました。<br>';
 		print '頂いたご意見『'.$goiken.'』<br>';
-		print $email.'にメールを送りましたのでご確認ください。':
+		print $email.'にメールを送りましたのでご確認ください。';
 
 	?>
 </body>
